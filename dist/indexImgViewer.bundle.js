@@ -76,7 +76,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _module_aggregator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../module/aggregator.js */ \"./module/aggregator.js\");\n\r\n\r\nconst formulario = document.getElementById(\"form-cargar-imagen\");\r\nconst imagen = document.getElementById(\"imagen\");\r\nconst galeria = document.getElementById(\"galeria\");\r\n\r\nformulario.addEventListener(\"submit\", function (e) {\r\n  e.preventDefault();\r\n  (0,_module_aggregator_js__WEBPACK_IMPORTED_MODULE_0__.cargarImagen)(imagen, galeria);\r\n});\r\n\n\n//# sourceURL=webpack://segundo-parcial-dw/./paginas/imgViewer/indexImgViewer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _module_aggregator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../module/aggregator.js */ \"./module/aggregator.js\");\n\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", function () {\r\n  const formulario = document.getElementById(\"form-cargar-imagen\");\r\n  const imagen = document.getElementById(\"imagen\");\r\n  const galeria = document.getElementById(\"galeria\");\r\n\r\n  if (formulario && imagen && galeria) {\r\n    formulario.addEventListener(\"submit\", function (e) {\r\n      e.preventDefault();\r\n      (0,_module_aggregator_js__WEBPACK_IMPORTED_MODULE_0__.cargarImagen)(imagen, galeria);\r\n    });\r\n  }\r\n});\r\n\n\n//# sourceURL=webpack://segundo-parcial-dw/./paginas/imgViewer/indexImgViewer.js?");
 
 /***/ })
 

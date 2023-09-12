@@ -31,21 +31,81 @@ module.exports = {
       },
     ],
   },
-  optimization: {
-    minimizer: [
-      new HtmlMinimizerPlugin(), 
-    ],
-  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./index.html",
       filename: "index.html",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
     }),
-    new CopyWebpackPlugin({
-      patterns: [
-        { from: "paginas", to: "paginas" },
-        { from: "module", to: "module" },
-      ],
+    new HtmlWebpackPlugin({
+      template: "./paginas/calculos/calculos.html",
+      filename: "paginas/calculos/calculos.html",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: "./paginas/imgViewer/imgViewer.html",
+      filename: "paginas/imgViewer/imgViewer.html",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./paginas/passwordGen/passwordGen.html",
+      filename: "paginas/passwordGen/passwordGen.html",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./paginas/unitConvert/unitConvert.html",
+      filename: "paginas/unitConvert/unitConvert.html",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./paginas/taskList/taskList.html",
+      filename: "/paginas/taskList/taskList.html",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
     }),
   ],
 };
