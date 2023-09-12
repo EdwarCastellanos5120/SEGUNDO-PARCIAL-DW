@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const unidadEntrada = document.getElementById("operacion-entrada").value;
       const unidadSalida = document.getElementById("operacion-salida").value;
       const resultado = document.getElementById("resultado");
-      console.log(temperatura, unidadEntrada, unidadSalida);
       resultado.classList.remove("d-none");
       resultado.innerHTML =
         "El resultado de la conversión es: " +
